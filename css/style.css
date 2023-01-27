@@ -22,12 +22,15 @@ body {
 background-color: aquamarine;
 }
 .container-header {
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
     display: flex;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
 
+    outline: 5px solid blue;
 }
 .nav-header {
     display: flex; 
@@ -41,19 +44,19 @@ background-color: aquamarine;
 }
 
 
-.item {}
-
-.link-header {
+.list-header > .item {
     margin-right: 30px;
-
-
+}
+.list-header>.item:last-child {
+margin-right: 0;
+}
+.link-header {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--praimery-title-color);
 }
-.link-header
 
 .link-header:hover,
 .link-header:focus {
