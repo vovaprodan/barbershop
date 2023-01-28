@@ -33,7 +33,7 @@ background-color: aquamarine;
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 5px solid blue;
+    /* outline: 5px solid blue; */
 }
 .nav-header {
     display: flex; 
@@ -43,6 +43,7 @@ background-color: aquamarine;
 .logo {}
 
 .list-header {
+    margin-left: 130px;
     align-items: center;
     display: flex;
 }
@@ -68,6 +69,9 @@ margin-right: 0;
 }
 
 .header-tell {
+    margin-left: auto;
+    margin-right: 43px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -98,3 +102,25 @@ margin-right: 0;
 .button-header:focus {
     background-color: var(--brend-color);
 }
+
+/* ---------HERO--------- */
+
+.container-hero {
+    background-color: bisque;
+}
+
+.hero-list {}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color:var(--secondberi-title-color);
+}
+
+.hero-pre-title {}
+
+.hero-title {}
+
+.hero-text {}
