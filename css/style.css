@@ -38,7 +38,9 @@ ul {
 
 /* --------HEADER--------- */
 .header {
-background-color: var(--secondberi-text-color) ;
+    position: absolute;
+    width: 100%;
+    margin-top: 32px;
 }
 .container-header {
     margin-left: auto;
@@ -104,6 +106,7 @@ margin-right: 0;
     border: 1px solid #FF6C00;
     border-radius: 25px;
     padding: 12px 20px;
+    margin-right: 17px;
 
     cursor: pointer;
     font-weight: 600;
@@ -113,6 +116,7 @@ margin-right: 0;
     text-transform: uppercase;
     color:var(--praimery-title-color);
     background-color: var(--secondberi-title-color);
+
 }
 .button-header:hover,
 .button-header:focus {
@@ -132,16 +136,33 @@ margin-right: 0;
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-
-    outline: 2px solid red;
 }
-
-.hero-list {
+.hero-soc {
+    display: flex;
+    align-items: flex-end;
     width: 100px;
+    padding-left: 27px;
+    padding-bottom: 40px;
+
+}
+.hero-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: bottom left;
+
+    
+}
+.hero-list::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
 }
 
 .box-hero {
-    padding: 247px 100px 208px;
+    padding: 272px 100px 208px;
 
 
     flex-grow: 1;
@@ -163,9 +184,6 @@ margin-right: 0;
     color: var(--brend-color);
 }
 
-.box-hero {
-
-}
 
 .hero-pre-title {
     margin-bottom: 20px;
@@ -212,8 +230,6 @@ margin-right: 0;
     margin-right: auto;
     margin-left: auto;
 
-
-    outline: 2px solid red;
 }
 
 
@@ -511,4 +527,252 @@ order: -1;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--praimery-text-color);
+}
+/* ----------------Our barbers---------------- */
+.barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--box-bg-color);
+}
+
+.container-barbers {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.barbers-pre-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--secondberi-title-color);
+}
+.barbers-pre-title::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
+}
+
+.barbers-title {
+    margin-bottom: 44px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--secondberi-title-color);
+}
+
+.barbers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.barbers-name {
+    margin-top: 30px;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondberi-title-color);
+}
+
+.barbers-extreme {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--brend-color);
+}
+
+/* -------------gallery-------------- */
+.gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container-gallery {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gallery-pre-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #303030;
+}
+.gallery-pre-title::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
+}
+
+.hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+
+
+.gallery-list {
+    display: flex;
+    gap: 30px;
+}
+
+.item {}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--praimery-title-color);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondberi-title-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--brend-color);
+}
+
+.contact-wrap {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    background-color: #191C26;
+    background-image: url(../imege/Bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+}
+
+.container-booking {
+    display: flex;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.online {
+    width: calc(50% + 15px);
+}
+
+.online-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.contacts {
+    padding-left: 104px;
+    width: calc(50% - 15px);
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--praimery-title-color);
+}
+
+.address {
+
+}
+
+.address-link {
+    font-style: normal;
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.address-tel {
+    display: block;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;  
+    color: #9DA4BD;
+}
+
+.address-mailto {
+    margin-bottom: 70px;
+    display: block;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #9DA4BD;
+}
+
+.address-text {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.address-time {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
 }
